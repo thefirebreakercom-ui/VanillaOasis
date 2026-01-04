@@ -6,46 +6,94 @@
     <title>Staff Applications | Vanilla Oasis</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
-        :root { --primary: #2ecc71; --dark: #1a1a1a; --light: #f4f4f4; --gold: #f39c12; }
-        body { font-family: 'Inter', sans-serif; background-color: var(--dark); color: var(--light); text-align: center; margin: 0; }
-        header { padding: 60px 20px; background: #252525; border-bottom: 5px solid var(--gold); }
+        :root {
+            --primary: #2ecc71;
+            --dark: #1a1a1a;
+            --light: #f4f4f4;
+            --gold: #f39c12;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--dark);
+            color: var(--light);
+            margin: 0;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        header {
+            padding: 60px 20px;
+            background: #252525;
+            border-bottom: 5px solid var(--gold);
+        }
+
+        h1 { color: var(--gold); font-size: 3rem; margin: 0; }
+
         .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
-        h1 { color: var(--gold); font-size: 3rem; margin-bottom: 10px; }
-        .app-card { background: #252525; padding: 30px; border-radius: 12px; margin-bottom: 20px; text-align: left; border: 1px solid #333; }
-        .app-card h3 { margin-top: 0; color: var(--primary); }
-        .btn { background: var(--gold); color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; display: inline-block; font-weight: bold; margin-top: 10px; }
-        .btn:hover { background: #e67e22; }
-        .back-link { display: block; margin-top: 30px; color: var(--primary); text-decoration: none; font-weight: bold; }
+
+        .app-card {
+            background: #252525;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            text-align: left;
+            border: 1px solid #333;
+        }
+
+        .app-card h3 { margin-top: 0; color: var(--primary); font-size: 1.5rem; }
+        
+        .btn-apply {
+            background: var(--gold);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+
+        .btn-apply:hover { background: #e67e22; transform: translateY(-2px); }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Staff Applications</h1>
-    <p>Help us build and protect the Oasis.</p>
-</header>
+    <header>
+        <h1>Staff Applications</h1>
+        <p>Help us grow the Vanilla Oasis community!</p>
+    </header>
 
-<div class="container">
-    <div class="app-card">
-        <h3>🛡️ Admin Application</h3>
-        <p>Requirements: Must be 16+, previous experience, and zero history of rule-breaking.</p>
-        <a href="YOUR_GOOGLE_FORM_LINK_HERE" class="btn">Create Application</a>
+    <div class="container">
+        
+        <div class="app-card">
+            <h3>🛡️ Admin Application</h3>
+            <p>Admin is a position of high trust. You will be responsible for overseeing the server and handling major issues. (Note: Rank must be earned over time).</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSea8TiloPopJOGvzuIWXxFDLPMv6Sis6jeEDD8IsKZL55F7nA/viewform?usp=dialog" target="_blank" class="btn-apply">Submit Admin Application</a>
+        </div>
+
+        <div class="app-card">
+            <h3>🔨 Builder Application</h3>
+            <p>Are you a talented builder? We are looking for people to help create spawns, events, and community areas. Portfolio may be required.</p>
+            <a href="https://forms.gle/c7vpafwYYNnNo2av7" target="_blank" class="btn-apply">Submit Builder Application</a>
+        </div>
+
+        <a href="index.html" class="back-link">← Return to Home Page</a>
+
     </div>
 
-    <div class="app-card">
-        <h3>🔨 Builder Application</h3>
-        <p>Requirements: Portfolio of previous builds. Must be able to work in Vanilla styles.</p>
-        <a href="YOUR_GOOGLE_FORM_LINK_HERE" class="btn">Create Application</a>
-    </div>
-
-    <div class="app-card">
-        <h3>🛡️ Moderator Application</h3>
-        <p>Requirements: Active in chat, helpful to new players, and knows the rules by heart.</p>
-        <a href="YOUR_GOOGLE_FORM_LINK_HERE" class="btn">Create Application</a>
-    </div>
-
-    <a href="index.html" class="back-link">← Back to Home</a>
-</div>
+    <footer>
+        <p style="color: #555; font-size: 0.8rem; padding-bottom: 20px;">&copy; 2026 Vanilla Oasis Staff Recruitment</p>
+    </footer>
 
 </body>
 </html>
