@@ -8,69 +8,112 @@
     <style>
         :root {
             --primary: #2ecc71;
+            --staff-gold: #f39c12;
             --dark: #1a1a1a;
             --light: #f4f4f4;
+            --danger: #e74c3c;
         }
         body {
             font-family: 'Inter', sans-serif;
             background-color: var(--dark);
             color: var(--light);
             margin: 0;
-            text-align: center;
+            line-height: 1.6;
         }
-        .container { max-width: 800px; margin: 0 auto; padding: 60px 20px; }
+        .container { max-width: 900px; margin: 0 auto; padding: 60px 20px; text-align: center; }
         
-        h1 { color: var(--primary); font-size: 3rem; margin-bottom: 40px; }
+        h1 { color: var(--primary); font-size: 3rem; margin-bottom: 10px; }
+        .subtitle { color: #888; margin-bottom: 50px; font-weight: bold; }
 
-        .rules-box {
-            background: #252525;
-            padding: 40px;
-            border-radius: 12px;
+        .rules-section {
             text-align: left;
+            background: #252525;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 40px;
             border: 1px solid #333;
         }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary);
+            display: inline-block;
+        }
+        
+        .staff-title { border-bottom-color: var(--staff-gold); color: var(--staff-gold); }
+
         .rule-item {
             margin-bottom: 20px;
-            padding-left: 20px;
-            border-left: 4px solid var(--primary);
-            background: rgba(46, 204, 113, 0.05);
             padding: 15px;
+            border-left: 4px solid var(--primary);
+            background: rgba(255, 255, 255, 0.03);
             border-radius: 0 8px 8px 0;
         }
-        .rule-item b { color: var(--primary); font-size: 1.1rem; display: block; margin-bottom: 5px; }
+
+        .staff-rule { border-left-color: var(--staff-gold); }
+
+        .rule-item b { color: var(--primary); display: block; font-size: 1.1rem; margin-bottom: 5px; }
+        .staff-rule b { color: var(--staff-gold); }
 
         .btn-back {
             display: inline-block;
-            margin-top: 30px;
-            padding: 12px 25px;
-            background: #333;
+            margin-top: 20px;
+            padding: 15px 35px;
+            background: var(--primary);
             color: white;
             text-decoration: none;
             border-radius: 50px;
             font-weight: bold;
             transition: 0.2s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
         }
-        .btn-back:hover { background: #444; transform: scale(1.05); }
+        .btn-back:hover { transform: translateY(-3px); background: #27ae60; }
         .btn-back:active { transform: scale(0.95); }
+
+        footer { margin-top: 50px; color: #555; font-size: 0.9rem; }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>📜 Server Rules</h1>
+        <h1>⚖️ OFFICIAL SERVER RULES</h1>
+        <p class="subtitle">By joining Vanilla Oasis, you agree to follow the guidelines below.</p>
 
-        <div class="rules-box">
-            <div class="rule-item"><b>1. No Admin Abuse</b>Zero tolerance. Staff roles are revoked immediately upon abuse.</div>
-            <div class="rule-item"><b>2. No Cheating</b>Hacking, X-ray, or exploit use results in a permanent ban.</div>
-            <div class="rule-item"><b>3. Be Positive</b>We are a support-first community. Toxicity is not welcome.</div>
-            <div class="rule-item"><b>4. No Harassment</b>Everyone deserves a safe space to play. Hate speech is an instant ban.</div>
-            <div class="rule-item"><b>5. No Spamming</b>Chat must remain readable for everyone.</div>
-            <div class="rule-item"><b>6. No NSFW Content</b>Strictly enforced 1-week timeout for violations.</div>
-            <div class="rule-item"><b>7. No Begging</b>Staff ranks are earned through trust, loyalty, and application only.</div>
+        <div class="rules-section">
+            <h2 class="section-title">🎮 General Player Rules</h2>
+            
+            <div class="rule-item">
+                <b>No Cheating 🚫</b>
+                Any form of hacking, X-raying, or external advantages is strictly prohibited.
+            </div>
+
+            <div class="rule-item">
+                <b>No Harassment 🤝</b>
+                Harassment of any kind is NOT tolerated. This server is built to be a safe space, unlike toxic communities that ban for fun. Respect your fellow players.
+            </div>
+
+            <div class="rule-item">
+                <b>No Spamming ⏳</b>
+                Repeated messaging will result in escalating timeouts (1 min ➡️ 10 mins ➡️ 1 hour, etc.).
+            </div>
+
+            <div class="rule-item">
+                <b>No NSFW Content 🔞</b>
+                Posting pornographic or adult content of any kind will result in an immediate 1-week timeout.
+            </div>
+
+            <div class="rule-item">
+                <b>Do Not Beg for Staff ✋</b>
+                Asking for Admin status will result in a timeout. Repeat offenders may be timed out for up to one month. Admin is earned, not given.
+            </div>
+
+            <div class="rule-item">
+                <b>Stay Positive ✨</b>
+                We are here to support each other. If you are feeling down or being harassed, reach out to staff so we can handle the situation before it escalates.
+            </div>
         </div>
 
-        <a href="index.html" class="btn-back">← Back to Home</a>
-    </div>
-
-</body>
-</html>
+        <div class="rules-section">
+            <h2 class="section-title staff-title">🛡
