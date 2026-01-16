@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote for Rewards | Vanilla Oasis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #f39c12;
+            --dark: #1a1a1a;
+            --light: #f4f4f4;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--dark);
+            color: var(--light);
+            margin: 0;
+            text-align: center;
+        }
+        .container { max-width: 600px; margin: 0 auto; padding: 60px 20px; }
+        
+        h1 { color: var(--gold); font-size: 3rem; margin-bottom: 10px; }
+        p { margin-bottom: 40px; font-size: 1.2rem; }
+
+        .vote-card {
+            background: #252525;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid #333;
+            transition: 0.3s;
+        }
+        .vote-card:hover { border-color: var(--gold); transform: translateX(5px); }
+
+        .site-name { font-weight: bold; font-size: 1.2rem; }
+        
+        .btn-vote {
+            background: var(--gold);
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+        .btn-vote:hover { background: #e67e22; }
+        .btn-vote:active { transform: scale(0.95); }
+
+        .btn-back {
+            display: inline-block;
+            margin-top: 30px;
+            color: #777;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>💎 Vote & Earn</h1>
+        <p>Vote daily! You receive <b>3 Diamonds</b> per vote in-game.</p>
+
+        <div class="vote-card">
+            <span class="site-name">MinecraftServers.org</span>
+            <a href="https://minecraftservers.org/vote/682162" target="_blank" class="btn-vote">Vote Now</a>
+        </div>
+
+        <div class="vote-card">
+            <span class="site-name">PlanetMinecraft</span>
+            <a href="https://www.planetminecraft.com/server/vanillaoasis-6800233/vote/" target="_blank" class="btn-vote">Vote Now</a>
+        </div>
+
+        <a href="index.html" class="btn-back">← Back to Home</a>
+    </div>
+
+</body>
+</html>
